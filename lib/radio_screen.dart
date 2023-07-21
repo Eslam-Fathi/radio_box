@@ -19,7 +19,7 @@ class RadioButtonsWidget extends StatelessWidget {
               groupValue: state.selectedValue,
               onChanged: (value) =>
                   context.read<RadioCubit>().selectRadio(value!),
-              title: Text('Radio Button $index'),
+              title: Text('Radio Button ${index + 1}'),
             );
           },
         );
